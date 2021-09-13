@@ -2,13 +2,20 @@ Random Planar Graphs
 ====================
 This script creates random planar graphs, suitable as input to graphviz `neato`.
 
+
+Requirements
+----------
+- [GraphViz](https://graphviz.org/download/)
+- [PyHull](https://pythonhosted.org/pyhull/)
+- [triangle](https://pypi.org/project/triangle/)
+
 Invocation
 ----------
 The simplest invocation is:
-> `python GenerateGraph.py outputgraph.gv`
+> `python GenerateGraph.py output.gv`
 
 which you could then render with:
-> `neato -Tpng outputgraph.gv > outputgraph.png`
+> `neato -Tpng output.gv > output.png`
 
 Note that sometimes neato decides to pick a nonplanar embedding.
 Try giving `neato` the `-n1` argument to use the node coordinates specified by this script, which are always planar but might not look as pretty.
