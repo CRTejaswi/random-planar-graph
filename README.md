@@ -35,6 +35,10 @@ The most common options are:
 * `--radius SIZE`: Nodes will not be placed within this distance of each other. Default 40.
 * `--double CHANCE`: Probability of an edge being doubled. Ranges from 0.00 to 1.00. Default 0.10.
 
+Issues
+-------
+- `neato -Tpng output.gv > output.png` generates erroneous png (wrong headers).
+
 License
 -------
 Copyright (C) 2014 GreyKnight
